@@ -6,37 +6,41 @@
 <meta name="description" content="Personal mathematics homepage of Feng Liu.">
 <title>Feng Liu — Mathematics</title>
 <style>
-:root{--bg:#fff;--text:#202124;--muted:#686868;--line:#e7e7e7;--accent:#24558a;--max:1040px}
+:root{--bg:#f4f5f7;--surface:rgba(255,255,255,.86);--surface-strong:#ffffff;--text:#202124;--muted:#676b72;--line:#dfe3e8;--accent:#24558a;--max:1180px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.72}
+body{margin:0;background:linear-gradient(180deg,#f3f5f7 0%,#faf9f6 48%,#f1f4f6 100%);color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.72}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
-.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(247,248,249,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(210,216,223,.85)}
 .nav-wrap{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
 .brand{color:var(--text);font-size:22px;font-weight:600;letter-spacing:-.02em}
 .nav{display:flex;gap:22px;align-items:center;font:14px/1.2 Arial,Helvetica,sans-serif}
 .nav a{color:#555}.nav a.active,.nav a:hover{color:var(--text);text-decoration:none}
 .menu-toggle{display:none;border:0;background:transparent;color:#444;font:14px Arial,sans-serif;cursor:pointer}
-main{max-width:var(--max);margin:0 auto;padding:0 28px}
-.hero{min-height:68vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,1fr);gap:40px;align-items:center;padding:90px 0 85px}
+main{max-width:var(--max);margin:0 auto;padding:30px 28px 54px}
+.hero{min-height:66vh;display:grid;grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);gap:54px;align-items:center;margin:18px 0 30px;padding:64px 58px;background:var(--surface);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 48px rgba(31,41,55,.06)}
 .hero-copy{min-width:0}
 .hero-graphic{display:flex;justify-content:flex-end;align-items:center}
-.hero-graphic img{display:block;width:min(100%,600px);height:auto;object-fit:contain}
+.hero-graphic img{display:block;width:min(100%,620px);height:auto;object-fit:cover;border-radius:20px;box-shadow:0 18px 44px rgba(16,24,40,.18)}
 .eyebrow{font:12px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.18em;color:#777;margin:0 0 25px}
 h1{font-size:clamp(46px,7vw,76px);font-weight:500;line-height:1.03;letter-spacing:-.045em;margin:0 0 20px}
 .role{font-size:22px;margin:0 0 4px}.affiliation{color:var(--muted);margin:0 0 28px}.intro{max-width:760px;font-size:20px;margin:0 0 28px}
 .contact-links{display:flex;flex-wrap:wrap;gap:16px;font:14px Arial,Helvetica,sans-serif}
-.section{padding:96px 0;border-top:1px solid var(--line);scroll-margin-top:78px}.section-last{padding-bottom:110px}
+.section{padding:72px 58px;margin:28px 0;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 34px rgba(31,41,55,.035);scroll-margin-top:92px}.section-last{padding-bottom:76px}
 .section-heading{display:flex;align-items:baseline;gap:18px;margin-bottom:25px}.section-heading span{font:12px Arial,sans-serif;letter-spacing:.12em;color:#999}.section-heading h2{margin:0;font-size:34px;font-weight:500;letter-spacing:-.025em}
-.section-lead{max-width:780px;color:#424242;font-size:19px;margin:0 0 35px}
-.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.research-card{border-top:2px solid #222;padding:17px 0}.research-card h3{margin:0 0 8px;font-size:20px;font-weight:500}.research-card p{margin:0;color:#666;font-size:15px;line-height:1.65}
+.section-lead{max-width:780px;color:#424242;font-size:19px;margin:0 0 30px}
+.research-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);gap:48px;align-items:center}
+.research-grid{display:grid;grid-template-columns:1fr;gap:14px}.research-card{border-top:2px solid #222;padding:15px 0 4px}.research-card h3{margin:0 0 7px;font-size:20px;font-weight:500}.research-card p{margin:0;color:#666;font-size:15px;line-height:1.65}
+.research-graphic{display:flex;justify-content:center;align-items:center;background:var(--surface-strong);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 28px rgba(31,41,55,.05)}
+.research-graphic img{display:block;width:min(100%,500px);height:auto}
 .year-group{margin-top:44px}.year-group:first-child{margin-top:0}.year{font-size:24px;font-weight:500;margin:0 0 14px;color:#333}.pub{padding:17px 0 20px;border-bottom:1px solid var(--line)}.pub-title{font-size:20px;line-height:1.42;margin:0 0 5px}.pub-authors{margin:0;color:#555;font-size:16px}.pub-venue{margin:2px 0 11px;font-size:15px;color:#666;font-style:italic}.pub-actions{display:flex;gap:18px;flex-wrap:wrap;font:13px Arial,sans-serif}.abstract{margin-top:13px;max-width:820px;color:#555;font-size:15px;display:none}.abstract.open{display:block}
 .item{padding:18px 0;border-bottom:1px solid var(--line)}.item-title{font-size:19px}.item-meta{color:#666;font-size:15px}
 .empty{color:#888;font-size:16px;padding:18px 0}
 .cv-box{display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid var(--line);padding:24px 0}.button{display:inline-block;border:1px solid #bbb;padding:9px 15px;color:#222;font:13px Arial,sans-serif}.button:hover{text-decoration:none;border-color:#777}
-.footer{max-width:var(--max);margin:auto;border-top:1px solid var(--line);padding:22px 28px 40px;display:flex;justify-content:space-between;gap:20px;color:#888;font:12px Arial,sans-serif}
-@media(max-width:760px){.nav{display:none;position:absolute;left:0;right:0;top:63px;background:white;border-bottom:1px solid var(--line);padding:14px 28px;flex-direction:column;align-items:flex-start;gap:13px}.nav.open{display:flex}.menu-toggle{display:block}.hero{min-height:auto;grid-template-columns:1fr;gap:34px;padding:78px 0 70px}.hero-graphic{justify-content:center}.hero-graphic img{width:min(100%,430px)}.intro{font-size:18px}.research-grid{grid-template-columns:1fr}.section{padding:72px 0}.section-heading h2{font-size:30px}.footer{flex-direction:column}}
+.footer{max-width:var(--max);margin:auto;padding:4px 28px 42px;display:flex;justify-content:space-between;gap:20px;color:#888;font:12px Arial,sans-serif}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:34px;padding:52px 42px}.hero-graphic{justify-content:center}.hero-graphic img{width:min(100%,680px)}.research-layout{grid-template-columns:1fr}.research-graphic{max-width:620px;margin:0 auto;width:100%}}
+@media(max-width:760px){.nav{display:none;position:absolute;left:0;right:0;top:63px;background:#f7f8f9;border-bottom:1px solid var(--line);padding:14px 28px;flex-direction:column;align-items:flex-start;gap:13px}.nav.open{display:flex}.menu-toggle{display:block}main{padding:18px 16px 40px}.hero{min-height:auto;margin:10px 0 20px;padding:42px 24px;border-radius:18px}.hero-graphic img{width:100%;border-radius:16px}.intro{font-size:18px}.section{padding:48px 24px;margin:20px 0;border-radius:18px}.section-heading h2{font-size:30px}.footer{flex-direction:column;padding-left:16px;padding-right:16px}}
 </style>
 </head>
 <body>
@@ -56,27 +60,153 @@ h1{font-size:clamp(46px,7vw,76px);font-weight:500;line-height:1.03;letter-spacin
     <h1>Feng Liu</h1>
     <p class="role">Researcher in Mathematics</p>
     <p class="affiliation">Structural Graph Theory</p>
-    <p class="intro">My research interests are in structural graph theory, particularly <em>χ</em>-boundedness, perfect divisibility, and structural problems concerning longest cycles and paths.</p>
+    <p class="intro">My research is mainly in structural graph theory, with an emphasis on coloring and structural decomposition of graph classes defined by forbidden induced subgraphs, particularly <em>χ</em>-boundedness and perfect divisibility. I am also interested in structural problems concerning longest cycles and paths.</p>
     <div class="contact-links"><a href="#cv">Curriculum Vitae</a><a href="#publications">Publications</a><a href="#preprints">Preprints</a><a href="mailto:">Email</a></div>
   </div>
   <div class="hero-graphic">
-    <img src="research-graph.png" alt="Graph-theoretic illustration">
+    <img src="/hero-starry.png" alt="Figure looking toward a star-filled night sky">
   </div>
 </section>
 
 <section id="research" class="section">
   <div class="section-heading"><span>01</span><h2>Research</h2></div>
-  <p class="section-lead">My research focuses on structural graph theory, with particular emphasis on coloring and decomposition, together with structural problems concerning longest cycles and paths.</p>
-  <div class="research-grid">
-    <article class="research-card"><h3>χ-boundedness</h3><p>Chromatic bounds for graph classes defined by forbidden induced subgraphs and related structural restrictions.</p></article>
-    <article class="research-card"><h3>Perfect Divisibility</h3><p>Perfect and perfectly weight divisible graph classes, structural decomposition, and coloring consequences.</p></article>
-    <article class="research-card"><h3>Long Cycles &amp; Paths</h3><p>Structural properties of longest cycles and longest paths.</p></article>
+  <div class="research-layout">
+    <div>
+      <p class="section-lead">My research is mainly in structural graph theory, with an emphasis on coloring and structural decomposition of graph classes defined by forbidden induced subgraphs. I am particularly interested in <em>χ</em>-boundedness, perfect divisibility, and structural problems concerning longest cycles and paths.</p>
+      <div class="research-grid">
+        <article class="research-card"><h3>χ-boundedness</h3><p>Chromatic bounds for graph classes defined by forbidden induced subgraphs and related structural restrictions.</p></article>
+        <article class="research-card"><h3>Perfect Divisibility</h3><p>Perfect and perfectly weight divisible graph classes, structural decomposition, and coloring consequences.</p></article>
+        <article class="research-card"><h3>Long Cycles &amp; Paths</h3><p>Structural properties of longest cycles and longest paths.</p></article>
+      </div>
+    </div>
+    <div class="research-graphic">
+      <img src="/research-graph.png" alt="Graph-theoretic illustration">
+    </div>
   </div>
 </section>
 
 <section id="publications" class="section">
   <div class="section-heading"><span>02</span><h2>Publications</h2></div>
-  <p class="empty">Published papers will be added from my MathSciNet record.</p>
+
+  <div class="year-group">
+    <h3 class="year">2026</h3>
+
+    <article class="pub">
+      <h4 class="pub-title">On the Hamiltonian-connectedness of [5,3]-graphs</h4>
+      <p class="pub-authors"><strong>Feng Liu</strong>, Hongxi Liu, Qi Wu</p>
+      <p class="pub-venue">Bulletin of the Australian Mathematical Society</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We study Hamiltonian-connectedness in [5,3]-graphs, extending earlier work on Hamiltonian properties of this graph class. The paper establishes conditions ensuring that every pair of vertices can be joined by a Hamilton path.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">On the pancyclicity of 2-connected [5,3]-graphs</h4>
+      <p class="pub-authors"><strong>Feng Liu</strong>, Hongxi Liu</p>
+      <p class="pub-venue">Discrete Applied Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2509.20038" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">We confirm the relevant case of Zhan's conjecture by proving a pancyclicity result for 2-connected [5,3]-graphs under the stated degree and order conditions. The proof develops structural arguments for extending cycles in this class.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Trisimplicial vertices in (fork, odd parachute)-free graphs</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Di Wu, Yidong Zhou</p>
+      <p class="pub-venue">Discrete Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2504.04496" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">We show that every (fork, odd parachute)-free graph is either perfectly divisible or contains a trisimplicial vertex. This yields a quadratic chromatic bound in terms of the clique number and gives related consequences for claw-free graphs.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Constructions of minimally t-tough regular graphs</h4>
+      <p class="pub-authors">Kun Cheng, Chengli Li, <strong>Feng Liu</strong></p>
+      <p class="pub-venue">Discrete Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2412.12659" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">We construct new families of minimally t-tough regular graphs, including regular examples in several previously unresolved parameter ranges. These constructions provide further information on conjectures concerning minimally tough regular graphs.</p>
+    </article>
+  </div>
+
+  <div class="year-group">
+    <h3 class="year">2025</h3>
+
+    <article class="pub">
+      <h4 class="pub-title">The minimum size and maximum diameter of an edge-pancyclic graph of a given order</h4>
+      <p class="pub-authors">Chengli Li, <strong>Feng Liu</strong>, Xingzhi Zhan</p>
+      <p class="pub-venue">Discrete Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2410.11183" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">We study extremal size and diameter questions for edge-pancyclic graphs. We obtain lower and upper bounds for the minimum size, determine the maximum diameter, and give an exact minimum-size result in the 3-connected case.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Borodin–Kostochka’s conjecture on {P<sub>2</sub> ∪ P<sub>3</sub>, gem, banner}-free graphs</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Yidong Zhou</p>
+      <p class="pub-venue">Rocky Mountain Journal of Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We verify the Borodin–Kostochka conjecture for graphs excluding P<sub>2</sub> ∪ P<sub>3</sub>, gem, and banner as induced subgraphs, using structural properties of this hereditary graph class.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Longest cycles and longest chordless cycles in 2-connected graphs</h4>
+      <p class="pub-authors">Yanan Hu, Chengli Li, <strong>Feng Liu</strong></p>
+      <p class="pub-venue">Bulletin of the Australian Mathematical Society</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2410.19005" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">We compare the circumference and induced circumference of 2-connected graphs and formulate an equivalent version of Harvey's conjecture for non-Hamiltonian graphs. We prove the conjecture for several graph classes, including ℓ-holed graphs.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">A note on <em>χ</em>-binding functions and linear forests</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Di Wu, Yidong Zhou</p>
+      <p class="pub-venue">Bulletin of the Australian Mathematical Society</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We prove a transfer principle for χ-binding functions involving finite linear forests. The result gives new χ-bounds for hereditary graph classes obtained by forbidding a linear forest together with an additional induced subgraph.</p>
+    </article>
+  </div>
+
+  <div class="year-group">
+    <h3 class="year">2024</h3>
+
+    <article class="pub">
+      <h4 class="pub-title">Borodin–Kostochka’s Conjecture on {P<sub>2</sub> ∪ P<sub>3</sub>, C<sub>4</sub>}-Free Graphs</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Yidong Zhou</p>
+      <p class="pub-venue">Graphs and Combinatorics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We prove the Borodin–Kostochka conjecture for {P<sub>2</sub> ∪ P<sub>3</sub>, C<sub>4</sub>}-free graphs: for maximum degree at least 9, the chromatic number is at most the larger of the clique number and Δ−1.</p>
+    </article>
+  </div>
+
+  <div class="year-group">
+    <h3 class="year">2023</h3>
+
+    <article class="pub">
+      <h4 class="pub-title">The Chromatic Number of a Graph with Two Odd Holes and an Odd Girth</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong></p>
+      <p class="pub-venue">Graphs and Combinatorics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">For graph classes of prescribed odd girth with longer odd holes excluded, we establish a 4-colorability result in the relevant range of odd-girth parameters.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Remarks on the Largest Eigenvalue of a Signed Graph</h4>
+      <p class="pub-authors">Kaiyang Lan, Jianxi Li, <strong>Feng Liu</strong></p>
+      <p class="pub-venue">Bulletin of the Malaysian Mathematical Sciences Society</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We study upper bounds for the largest eigenvalue of a signed graph, characterize equality cases for bounds involving the balanced clique number, and derive an additional relation with the largest eigenvalue of a vertex-deleted subgraph.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">Some remarks on graphs with no induced subdivision of K<sub>4</sub></h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Yidong Zhou</p>
+      <p class="pub-venue">Discrete Applied Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">We prove a 4-colorability result for a P<sub>6</sub>-free class containing no induced subdivision of K<sub>4</sub>, providing a new positive case in the study of coloring graphs with forbidden induced subdivisions.</p>
+    </article>
+
+    <article class="pub">
+      <h4 class="pub-title">A note on a conjecture of Wu, Xu and Xu</h4>
+      <p class="pub-authors">Kaiyang Lan, <strong>Feng Liu</strong>, Yidong Zhou</p>
+      <p class="pub-venue">Discrete Applied Mathematics</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a></div>
+      <p class="abstract">For a family of graphs defined by odd-girth and forbidden longer odd holes, we prove a 3-colorability result under a radius condition, extending earlier work on the conjectured 3-colorable class.</p>
+    </article>
+  </div>
 </section>
 
 <section id="preprints" class="section">
@@ -138,6 +268,27 @@ h1{font-size:clamp(46px,7vw,76px);font-weight:500;line-height:1.03;letter-spacin
       <p class="pub-authors"><strong>Feng Liu</strong>, Shuang Sun, Yan Wang, Jiasheng Zeng</p>
       <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2603.16670" target="_blank" rel="noopener">PDF</a></div>
       <p class="abstract">The Borodin--Kostochka conjecture states that every graph G with maximum degree Δ(G) ≥ 9 satisfies χ(G) ≤ max{ω(G), Δ(G)−1}. We verify the conjecture for graphs with sufficiently large maximum degree. More precisely, every graph with maximum degree Δ ≥ 5.3 × 10<sup>6</sup> and clique number ω(G) &lt; Δ satisfies χ(G) ≤ Δ−1, improving a longstanding result of Reed.</p>
+    </article>
+  </div>
+
+
+  <div class="year-group">
+    <h3 class="year">2025</h3>
+    <article class="pub preprint">
+      <h4 class="pub-title">Cycles and paths through vertices whose degrees are at least the bipartite-hole-number</h4>
+      <p class="pub-authors">Chengli Li, <strong>Feng Liu</strong>, Yurui Tang</p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2506.09750" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">The bipartite-hole-number measures when every two disjoint vertex sets of suitable prescribed sizes must have an edge between them. We show that every 2-connected graph has a cycle containing all vertices whose degrees are at least this parameter. We also prove a path analogue: for two vertices of sufficiently large degree, there is a path joining them that contains every vertex above the corresponding degree threshold.</p>
+    </article>
+  </div>
+
+  <div class="year-group">
+    <h3 class="year">2024</h3>
+    <article class="pub preprint">
+      <h4 class="pub-title">Bound vertices of longest paths between two vertices in cubic graphs</h4>
+      <p class="pub-authors">Chengli Li, <strong>Feng Liu</strong></p>
+      <div class="pub-actions"><a href="#" class="abstract-toggle">Abstract</a><a href="https://arxiv.org/pdf/2406.07942" target="_blank" rel="noopener">PDF</a></div>
+      <p class="abstract">Motivated by Zhan's conjecture on bound vertices of longest paths, we prove the conjecture for 2-connected cubic graphs. For 3-connected cubic graphs we establish the corresponding result when the two prescribed endvertices are adjacent. As a consequence, every longest cycle in a 3-connected cubic graph has at least two chords.</p>
     </article>
   </div>
 </section>
